@@ -1,0 +1,49 @@
+.ask
+  padding-top: 127px
+  &__wrap
+    position: relative
+    padding: 42px 42px 50px
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 435px
+  &__title
+    margin-bottom: 28px
+  &__desc
+    margin-top: 10px
+  &__img
+    position: absolute
+    bottom: -41px
+    right: -150px
+  &__bg
+    z-index: -1
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 6px
+
+@media screen and (max-width: 950px)
+  .ask
+    padding-top: 0
+    &__wrap
+      padding: 24px 46px 380px
+      margin-left: -15px
+      margin-right: -15px
+    &__content
+      align-items: center
+      margin-left: auto
+      margin-right: auto
+    &__title
+      text-align: center
+    &__bg
+      border-radius: 0
+    &__img
+      right: 50%
+      bottom: -32px
+      margin-right: -40px
+      transform: translateX(50%)
+      img
+        width: 620px

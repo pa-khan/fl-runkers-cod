@@ -1,19 +1,66 @@
-@import fonts
-@import vars
-@import reset
-@import grid
+.c-white
+	color: #F1F2F4
 
-@import ../components/button/button
-@import ../components/field/field
-@import ../components/check/check
-@import ../components/select/select
-@import ../components/popup/popup
-// @import ../components/tabs/tabs
-// @import ../components/popup/popup
-// @import ../components/slider/slider
-// @import ../components/tog/tog
+.ff-intro
+	font-family: 'Inter', sans-serif
+
+.relative
+	position: relative
+
+.btn
+	z-index: 1
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	outline: none
+	&.--violet
+		color: #fff
+		font-family: 'Inter'
+		font-weight: 700
+		font-size: 15px
+		line-height: 18px
+		letter-spacing: -0.015em
+		text-transform: uppercase
+		border-radius: 5px
+		overflow: hidden
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transition: .3s
+		&::before
+			z-index: -1
+			background: linear-gradient(180deg, #676BFF 0%, #5458F7 100%)
+		&::after
+			z-index: -2
+			background: linear-gradient(180deg,#7C67FF 0%,#474CF8 100%)
+		&:hover
+			&::before
+				opacity: 0
+	&.--md
+		height: 43px
+		padding: 0 20px
+
+.case
+	max-width: 1142px
+	padding-left: 15px
+	padding-right: 15px
+	margin-left: auto
+	margin-right: auto
+
+.cover
+	overflow: hidden
+	img
+		display: block
+		object-fit: cover
+		width: 100%
+		height: 100%
+		max-width: 100%
+		max-height: 100%
 
 @import typography
-
-.overflow-disable
-	overflow: hidden

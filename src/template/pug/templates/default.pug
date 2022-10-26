@@ -6,18 +6,664 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		title=title
+		<link rel="stylesheet" href="https://runkers.com/css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://runkers.com/css/adapt.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link rel="icon" href="https://runkers.com/img/favicon.svg">
+		<link rel="stylesheet" type="text/css" href="https://runkers.com/scripts/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="https://runkers.com/scripts/slick/slick-theme.css" />
+		<script src="https://runkers.com/scripts/jquery-3.6.0.min.js"></script>
 	body
-		.wrap
-			link(rel="stylesheet" href="template/css/style.css" + version)
-
-			+style('header', 'blocks')
-			include ../../blocks/header/header
-			+script('header', 'blocks')
-			
-			main.main
-				block content
-
-			+style('footer', 'blocks')
-			include ../../blocks/footer/footer
-
-			script(src="template/js/common.js" + version)
+		<link rel="stylesheet" href="template/css/style.css">
+		<div id="LogInReg">
+			<div class="LogInReg__contant">
+				<div class="LogInReg__Img"> </div>
+				<div class="LogInReg__Form">
+					<div class="LogInReg__FormLogin"> <span class="LogInReg__title">Log in</span>
+						<form action="">
+							<input type="text" placeholder="Email">
+							<input type="password" placeholder="Password">
+							<div class="LogInReg__checkbox">
+								<div class="checkbox">
+									<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.375 6.35L4.94643 9.5L12.625 1.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div> <span>Remember me</span> <a href="#">Forgot your password?</a> </div>
+							<input type="checkbox" name="" id=""> </form>
+						<div class="buttons">
+							<button class="Disabled" btn="Login"> <span>Login</span> </button>
+							<button class="black" btn="Sign"> <span>Sign up</span> </button>
+						</div>
+					</div>
+					<div class="LogInReg__FormReg"> <span class="LogInReg__title">Become a member</span>
+						<form action="">
+							<input type="text" placeholder="Email">
+							<input type="password" placeholder="Password">
+							<input type="password" placeholder="Confirm Password">
+							<div class="LogInReg__checkbox">
+								<div class="checkbox">
+									<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.375 6.35L4.94643 9.5L12.625 1.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+								<p> <span>I accept </span> <a href="/info/legal/user-agreement">Terms and conditions</a> <span>and</span> <a href="/info/legal/privacy-policy">Privacy Policy</a> </p>
+							</div>
+							<input type="checkbox" name="" id=""> </form>
+						<div class="buttons">
+							<button class="Disabled" btn="Sign"> <span>Sign up</span> </button>
+							<button class="black" btn="Login"> <span>Login</span> </button>
+						</div>
+					</div>
+				</div>
+				<div class="Close">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L6.00003 6M6.00003 6L11 1M6.00003 6L1 11M6.00003 6L11 11" stroke="#616B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="Loader" style="display: none;"> <img class="imgLoader" src="https://runkers.com/img/loader.png" alt=""> </div>
+			<div class="header__LeftSection">
+				<a href="/">
+					<div class="Logo"> <img src="https://runkers.com/img/header/Logo_test.svg" alt="" srcset=""> </div>
+				</a>
+				<div class="Catalog"> <img class="CatalogKrest" src="https://runkers.com/img/menu-01.svg" alt="CatalogBurger"> <img class="CatalogBurger" src="https://runkers.com/img/menu-02.svg" alt="CatalogKrest"> <span>Catalog</span> </div>
+				<div style="display: inline-block ;">
+					<div wire:id="yZBBj3shl1EHg1F5SY2G">
+						<div class="CatalogBody Scroll">
+							<div class="Left" style="z-index: 2"><span class="Title">Choose the game</span>
+								<div class="card Active" id="2" active="1"> <img class="imgGame" src="https://runkers.com/images/uploads/aa8d4d334462de23e1642a3cfca62f3b.svg " alt="" srcset=""> <span class="GameName">CoD: Warzone</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+								<div class="card" id="11" active="0"> <img class="imgGame" src="https://runkers.com/images/uploads/16b79376d029701f94d6c194db9ccc0a.svg " alt="" srcset=""> <span class="GameName">CoD: Modern Warfare II</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+								<div class="card" id="12" active="0"> <img class="imgGame" src="https://runkers.com/images/uploads/850cc6a8585bca7db56267ac451ab2d6.svg " alt="" srcset=""> <span class="GameName">CoD: Warzone 2.0</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+								<div class="card" id="8" active="0"> <img class="imgGame" src="https://runkers.com/images/uploads/7857535a0348200c78bc0b00abc7cfef.svg " alt="" srcset=""> <span class="GameName">CoD: Vanguard</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+								<div class="card" id="10" active="0"> <img class="imgGame" src="https://runkers.com/images/uploads/6c35c0fc60759a9142c9252583164f5a.svg " alt="" srcset=""> <span class="GameName">CoD: Black Ops Cold War</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+								<div class="card" id="9" active="0"> <img class="imgGame" src="https://runkers.com/images/uploads/44af275f29eb01cfcee1c0ba1c5a94ef.svg " alt="" srcset=""> <span class="GameName">CoD: Modern Warfare</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+								<div class="card" id="3" active="0"> <img class="imgGame" src="https://runkers.com/images/uploads/96c17e59b59378fa2ac13859fb98f7d2.svg " alt="" srcset=""> <span class="GameName">Apex Legends</span>
+									<svg class="Arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.14288 1.28571L6.85717 7L1.14288 12.7143" stroke="#8283A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									<div class="soon"> soon </div>
+								</div>
+							</div>
+							<div class="Right"> <span class="Title">Categories</span>
+								<div class="RowCategr">
+									<div class="LeftCategr">
+										<div class="block less" indexx="2" indexgame="2">
+											<a href="https://runkers.com/games/call-of-duty-warzone/weapon-unlock">
+												<div class="category"> Weapon Unlock </div>
+											</a>
+										</div>
+										<div class="block less" indexx="3" indexgame="2">
+											<a href="https://runkers.com/games/call-of-duty-warzone/power-leveling">
+												<div class="category"> Power Leveling </div>
+											</a>
+										</div>
+										<div class="block less" indexx="4" indexgame="2">
+											<a href="https://runkers.com/games/call-of-duty-warzone/play-with-pros">
+												<div class="category"> Play with PROs </div>
+											</a>
+										</div>
+										<div class="block less" indexx="5" indexgame="2">
+											<a href="https://runkers.com/games/call-of-duty-warzone/coaching">
+												<div class="category"> Coaching </div>
+											</a>
+										</div>
+									</div>
+									<div class="RightCategr">
+										<div class="Sectionscategory Active" id="2" style="display: block;">
+											<div class="block">
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking">
+													<div class="category"> Camo Unlocking </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/assault-rifles">
+													<div class="subcategory"> Assault Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/smgs">
+													<div class="subcategory"> SMGS </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/shotguns">
+													<div class="subcategory"> Shotguns </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/lmgs">
+													<div class="subcategory"> LMGS </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/tactical-rifles">
+													<div class="subcategory"> Tactical Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/marksman-rifles">
+													<div class="subcategory"> Marksman Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/sniper-rifles">
+													<div class="subcategory"> Sniper Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/handguns">
+													<div class="subcategory"> Handguns </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/launchers">
+													<div class="subcategory"> Launchers </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/camo-unlocking/melee">
+													<div class="subcategory"> Melee </div>
+												</a>
+											</div>
+											<div class="block">
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling">
+													<div class="category"> Weapon Leveling </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/assault-rifles">
+													<div class="subcategory"> Assault Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/smgs">
+													<div class="subcategory"> SMGS </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/shotguns">
+													<div class="subcategory"> Shotguns </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/lmgs">
+													<div class="subcategory"> LMGS </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/tactical-rifles">
+													<div class="subcategory"> Tactical Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/marksman-rifles">
+													<div class="subcategory"> Marksman Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/sniper-rifles">
+													<div class="subcategory"> Sniper Rifles </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/handguns">
+													<div class="subcategory"> Handguns </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/launchers">
+													<div class="subcategory"> Launchers </div>
+												</a>
+												<a href="https://runkers.com/games/call-of-duty-warzone/weapon-leveling/melee">
+													<div class="subcategory"> Melee </div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<a href="https://runkers.com/info/about-us">
+							<li>About us</li>
+						</a>
+						<a href="https://runkers.com/info/guarantees">
+							<li>Guarantess</li>
+						</a>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__RightSection">
+				<div wire:id="XuoNbpvjVoxj2570AGC8">
+					<nav class="four">
+						<ul class="topmenu">
+							<li class="currency__switch">
+								<p hidden="">USD</p>
+								<svg class="currency" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="13" cy="13" r="13" fill="#202B46"></circle>
+									<path d="M12.9283 21.3636V5H13.9766V21.3636H12.9283ZM15.4531 10.5611C15.4105 10.0923 15.2209 9.72798 14.8842 9.46804C14.5518 9.20384 14.0767 9.07173 13.4588 9.07173C13.0497 9.07173 12.7088 9.125 12.4361 9.23153C12.1634 9.33807 11.9588 9.48509 11.8224 9.67259C11.6861 9.85582 11.6158 10.0668 11.6115 10.3054C11.603 10.5014 11.6413 10.674 11.7266 10.8232C11.8161 10.9723 11.9439 11.1044 12.1101 11.2195C12.2805 11.3303 12.4851 11.4283 12.7237 11.5135C12.9624 11.5987 13.2308 11.6733 13.5291 11.7372L14.6541 11.9929C15.3018 12.1335 15.8729 12.321 16.3672 12.5554C16.8658 12.7898 17.2834 13.0689 17.62 13.3928C17.9609 13.7166 18.2188 14.0895 18.3935 14.5114C18.5682 14.9332 18.6577 15.4063 18.6619 15.9304C18.6577 16.7571 18.4489 17.4666 18.0355 18.059C17.6222 18.6513 17.0277 19.1051 16.2521 19.4205C15.4808 19.7358 14.5497 19.8935 13.4588 19.8935C12.3636 19.8935 11.4091 19.7294 10.5952 19.4013C9.78125 19.0732 9.14844 18.5746 8.69673 17.9055C8.24503 17.2365 8.01278 16.3906 8 15.3679H11.0298C11.0554 15.7898 11.1683 16.1413 11.3686 16.4226C11.5689 16.7038 11.8438 16.9169 12.1932 17.0618C12.5469 17.2067 12.956 17.2791 13.4205 17.2791C13.8466 17.2791 14.2088 17.2216 14.5071 17.1065C14.8097 16.9915 15.0419 16.8317 15.2038 16.6271C15.3658 16.4226 15.4489 16.1882 15.4531 15.924C15.4489 15.6768 15.3722 15.4659 15.223 15.2912C15.0739 15.1122 14.8438 14.9588 14.5327 14.831C14.2259 14.6989 13.8338 14.5774 13.3565 14.4666L11.9886 14.147C10.8551 13.8871 9.96236 13.4673 9.31037 12.8878C8.65838 12.304 8.33452 11.5156 8.33878 10.5227C8.33452 9.71307 8.55185 9.00355 8.99077 8.39418C9.42969 7.7848 10.0369 7.30966 10.8125 6.96875C11.5881 6.62784 12.4723 6.45739 13.4652 6.45739C14.4794 6.45739 15.3594 6.62997 16.1051 6.97514C16.8551 7.31605 17.4368 7.79546 17.8501 8.41335C18.2635 9.03125 18.4744 9.74716 18.483 10.5611H15.4531Z" fill="#A9B3D6"></path>
+								</svg> <span>USD</span>
+								<svg class="Arrow" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.85742 3.57129L5.00028 6.42843L2.14314 3.57129" stroke="#A9B3D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</li>
+							<ul class="submenu">
+								<li wire:click="ReloadCurrencyUsd">
+									<svg class="currency" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="13" cy="13" r="13" fill="#202B46"></circle>
+										<path d="M12.9283 21.3636V5H13.9766V21.3636H12.9283ZM15.4531 10.5611C15.4105 10.0923 15.2209 9.72798 14.8842 9.46804C14.5518 9.20384 14.0767 9.07173 13.4588 9.07173C13.0497 9.07173 12.7088 9.125 12.4361 9.23153C12.1634 9.33807 11.9588 9.48509 11.8224 9.67259C11.6861 9.85582 11.6158 10.0668 11.6115 10.3054C11.603 10.5014 11.6413 10.674 11.7266 10.8232C11.8161 10.9723 11.9439 11.1044 12.1101 11.2195C12.2805 11.3303 12.4851 11.4283 12.7237 11.5135C12.9624 11.5987 13.2308 11.6733 13.5291 11.7372L14.6541 11.9929C15.3018 12.1335 15.8729 12.321 16.3672 12.5554C16.8658 12.7898 17.2834 13.0689 17.62 13.3928C17.9609 13.7166 18.2188 14.0895 18.3935 14.5114C18.5682 14.9332 18.6577 15.4063 18.6619 15.9304C18.6577 16.7571 18.4489 17.4666 18.0355 18.059C17.6222 18.6513 17.0277 19.1051 16.2521 19.4205C15.4808 19.7358 14.5497 19.8935 13.4588 19.8935C12.3636 19.8935 11.4091 19.7294 10.5952 19.4013C9.78125 19.0732 9.14844 18.5746 8.69673 17.9055C8.24503 17.2365 8.01278 16.3906 8 15.3679H11.0298C11.0554 15.7898 11.1683 16.1413 11.3686 16.4226C11.5689 16.7038 11.8438 16.9169 12.1932 17.0618C12.5469 17.2067 12.956 17.2791 13.4205 17.2791C13.8466 17.2791 14.2088 17.2216 14.5071 17.1065C14.8097 16.9915 15.0419 16.8317 15.2038 16.6271C15.3658 16.4226 15.4489 16.1882 15.4531 15.924C15.4489 15.6768 15.3722 15.4659 15.223 15.2912C15.0739 15.1122 14.8438 14.9588 14.5327 14.831C14.2259 14.6989 13.8338 14.5774 13.3565 14.4666L11.9886 14.147C10.8551 13.8871 9.96236 13.4673 9.31037 12.8878C8.65838 12.304 8.33452 11.5156 8.33878 10.5227C8.33452 9.71307 8.55185 9.00355 8.99077 8.39418C9.42969 7.7848 10.0369 7.30966 10.8125 6.96875C11.5881 6.62784 12.4723 6.45739 13.4652 6.45739C14.4794 6.45739 15.3594 6.62997 16.1051 6.97514C16.8551 7.31605 17.4368 7.79546 17.8501 8.41335C18.2635 9.03125 18.4744 9.74716 18.483 10.5611H15.4531Z" fill="#A9B3D6"></path>
+									</svg> <span>USD</span> </li>
+								<li wire:click="ReloadCurrencyEuro">
+									<svg class="currency" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="13" cy="13" r="13" fill="#202B46"></circle>
+										<path d="M16.2685 10.6406L15.6229 12.0852H7L7.54332 10.6406H16.2685ZM15.0092 13.3636L14.2741 14.8466H7L7.54332 13.3636H15.0092ZM17.9815 7.13139L16.8182 9.60511C16.6818 9.52841 16.5028 9.42614 16.2813 9.2983C16.0639 9.16619 15.804 9.04901 15.5014 8.94673C15.2031 8.84446 14.8643 8.79332 14.4851 8.79332C13.9396 8.79332 13.4709 8.92756 13.0788 9.19602C12.6868 9.46023 12.3842 9.8821 12.1712 10.4616C11.9624 11.0412 11.858 11.8018 11.858 12.7436C11.858 13.6939 11.9624 14.4567 12.1712 15.032C12.3842 15.603 12.6868 16.0163 13.0788 16.272C13.4709 16.5277 13.9396 16.6555 14.4851 16.6555C14.8601 16.6555 15.1946 16.6065 15.4886 16.5085C15.7869 16.4105 16.0426 16.2997 16.2557 16.1761C16.473 16.0483 16.6435 15.9418 16.767 15.8565L17.9368 18.3366C17.468 18.7074 16.9396 18.9865 16.3516 19.174C15.7678 19.3572 15.1456 19.4489 14.4851 19.4489C13.3473 19.4489 12.3395 19.1868 11.4616 18.6626C10.5881 18.1385 9.90412 17.3778 9.4098 16.3807C8.91548 15.3793 8.66832 14.1669 8.66832 12.7436C8.66832 11.3246 8.91548 10.1122 9.4098 9.10653C9.90412 8.10085 10.5881 7.33168 11.4616 6.79901C12.3395 6.26634 13.3473 6 14.4851 6C15.1712 6 15.804 6.09801 16.3835 6.29403C16.9673 6.49006 17.5 6.76918 17.9815 7.13139Z" fill="#A9B3D6"></path>
+									</svg> <span>EUR</span> </li>
+							</ul>
+						</ul>
+					</nav>
+				</div>
+				<button class="HoverButton"> <span>Login or Sign Up</span> </button>
+			</div>
+			<div class=" BurgerMenu HidenForAdapt ">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="27" height="27" rx="3.5" fill="url(#paint0_linear_531_962)" fill-opacity="0.35" stroke="url(#paint1_linear_531_962)"></rect>
+					<defs>
+						<linearGradient id="paint0_linear_531_962" x1="-2.07692" y1="6.65925e-06" x2="32.3756" y2="2.04487" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#5458F7"></stop>
+							<stop offset="1" stop-color="#4E9FFF"></stop>
+						</linearGradient>
+						<linearGradient id="paint1_linear_531_962" x1="-2.07692" y1="6.65925e-06" x2="32.3756" y2="2.04487" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#5458F7"></stop>
+							<stop offset="1" stop-color="#4E9FFF"></stop>
+						</linearGradient>
+					</defs>
+				</svg>
+				<div class="BurgerMenuLines">
+					<div class="line"></div>
+					<div class="line center"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+		</header>
+		<section class="SectionContant GridMarkup">
+			<div wire:id="pX8ZukLhDHYoWeoYdKpv">
+				<div class="LeftMenu Main">
+					<div class="LeftMenuContainer">
+						<div class="LeftMenu__header" style="background-image:url(https://runkers.com/images/uploads/6455a94ba5d991796a8b64e05aee66d7.png)"> <img class="Icon" src="https://runkers.com/images/uploads/aa8d4d334462de23e1642a3cfca62f3b.svg" alt="" srcset=""> <span class="TitleLeftMenu">CoD: Warzone</span>
+							<div class="BlockButton">
+								<button> <img src="https://runkers.com/img/ArrouLeftMenu.svg" class="Arrou" alt="" srcset=""> </button>
+							</div>
+							<div class="menu-left__content">
+								<div class="scrollbars__container">
+									<div class="scrollbars" style="position:relative;overflow:hidden;width:100%;height:100%">
+										<div style="position: absolute; inset: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px;">
+											<div class="menu-left__categories menu-left__categories-border ux-layout ux-layout_column">
+												<div class="menu-left__categories-title">Categories</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/gold" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_gold_new"></i><span class="menu-left__item-text">WoW Gold</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/shadowlands-boost" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_hot-offers"></i><span class="menu-left__item-text">9.2 Eternity's End</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/dungeons" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_other_currencies_new"></i><span class="menu-left__item-text">Mythic+ Dungeons</span></div>
+														<div class="menu-left__item-right-render">
+															<button type="button" class="menu-left__sub-category-btn">+</button>
+														</div>
+													</a>
+													<div style="height:0;overflow:[object Object];min-height:0px;transition:500ms all" class="dropdown__animate">
+														<div class="animation__container_child">
+															<ul class="dropdown">
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/dungeons/mythic+10" data-has-wh-touch-event="true">Mythic+ 10</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/dungeons/mythic+15" data-has-wh-touch-event="true">Mythic +15</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/dungeons/mythic+20" data-has-wh-touch-event="true">Mythic +20</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/dungeons/keystone-master-achievement" data-has-wh-touch-event="true">Keystone Master Season Three</a></li>
+															</ul>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<a class="menu-left__item menu-left__item_active menu-left__item_active-icon" href="/games/wow/raids" data-has-wh-touch-event="true" aria-current="page">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_raids_blue"></i><span class="menu-left__item-text">Raids</span></div>
+														<div class="menu-left__item-right-render">
+															<button type="button" class="menu-left__sub-category-btn">+</button>
+														</div>
+													</a>
+													<div style="height: 0px; min-height: 0px; transition: all 500ms ease 0s;" class="dropdown__animate">
+														<div class="animation__container_child">
+															<ul class="dropdown">
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/raids/sepulcher-of-the-first-ones" data-has-wh-touch-event="true">Sepulcher of the First Ones</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/raids/sanctum-of-domination" data-has-wh-touch-event="true">Sanctum of Domination</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/raids/castle-nathria" data-has-wh-touch-event="true">Castle Nathria</a></li>
+															</ul>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/pvp" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_pvp_new"></i><span class="menu-left__item-text">PvP</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/overgear-packages" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_sale_new"></i><span class="menu-left__item-text">Overgear Bundles</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/leveling" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_level_gear_boosting_3_new"></i><span class="menu-left__item-text">Leveling</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/quests-and-farming" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_quests_new"></i><span class="menu-left__item-text">Character Boosting</span></div>
+														<div class="menu-left__item-right-render">
+															<button type="button" class="menu-left__sub-category-btn">+</button>
+														</div>
+													</a>
+													<div style="height:0;overflow:[object Object];min-height:0px;transition:500ms all" class="dropdown__animate">
+														<div class="animation__container_child">
+															<ul class="dropdown">
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/achievements" data-has-wh-touch-event="true">Achievements</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/torghast" data-has-wh-touch-event="true">Torghast Tower Boost</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/shadowlands-legendaries" data-has-wh-touch-event="true">Shadowlands Legendaries</a></li>
+															</ul>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/accounts" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_items_new"></i><span class="menu-left__item-text">Accounts for Sale</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/quests-and-farming/mage-tower" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_level_gear_boosting_new"></i><span class="menu-left__item-text">Mage Tower Boost</span></div>
+													</a>
+												</div>
+												<div>
+													<a class="menu-left__item" href="/games/wow/mounts" data-has-wh-touch-event="true">
+														<div class="item__wrapper"><i class="menu-left__item-icon menu__icon menu__icon_margin menu__icon_mount"></i><span class="menu-left__item-text">Collectibles</span></div>
+														<div class="menu-left__item-right-render">
+															<button type="button" class="menu-left__sub-category-btn">-</button>
+														</div>
+													</a>
+													<div style="height: 392px; min-height: 0px; transition: all 500ms ease 0s;" class="dropdown__animate">
+														<div class="animation__container_child">
+															<ul class="dropdown dropdown_show">
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/mounts/tcg-mounts" data-has-wh-touch-event="true">TCG Loot</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/mounts/raid-mounts" data-has-wh-touch-event="true">Raid Mounts</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/mounts/reputation-mounts" data-has-wh-touch-event="true">Reputation Mounts</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/mounts/shadowlands-mounts" data-has-wh-touch-event="true">Shadowlands Mounts</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/mounts/bfa-mounts" data-has-wh-touch-event="true">BfA Mounts</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/mounts/legion-mounts" data-has-wh-touch-event="true">Legion Mounts</a></li>
+																<li class="dropdown__item"><a class="dropdown__link" href="/games/wow/transmog" data-has-wh-touch-event="true">Transmog</a></li>
+															</ul>
+															<div></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div style="position:absolute;height:6px;display:none;right:2px;bottom:2px;left:2px;border-radius:3px">
+											<div style="position:relative;display:block;height:100%;cursor:pointer;border-radius:inherit;background-color:rgba(0,0,0,.2)"></div>
+										</div>
+										<div style="position:absolute;width:6px;display:none;right:2px;bottom:2px;top:2px;border-radius:3px">
+											<div style="position:relative;display:block;width:100%;cursor:pointer;border-radius:inherit;background-color:rgba(0,0,0,.2)"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="LeftMenu__body">
+							<div class="menu-left">
+								<div class="menu-left__content">
+									<div class="scrollbars__container">
+										<div class="scrollbars" style="position:relative;overflow:hidden;width:100%;height:calc(100% - 100px)">
+											<div class="CHooseGame"> <span class="CHooseGameTitle">CHoose game</span>
+												<ul>
+													<a href="https://runkers.com/games/call-of-duty-warzone">
+														<li> <img src="https://runkers.com/images/uploads/aa8d4d334462de23e1642a3cfca62f3b.svg" alt="" srcset="" style="width: 30px;">
+															<p id="game">CoD: Warzone</p>
+															<p hidden="" class="game_name 1">call-of-duty-warzone</p>
+														</li>
+													</a>
+												</ul>
+											</div>
+											<ul class="BaseUl">
+												<li class="Dpop CategoryName" urll="camo-unlocking">
+													<div class="LiContant">
+														<div class="centrContant"> <img class="imgCategory" src="https://runkers.com/images/uploads/de6360ad6be33b95017de4d80deace14.svg" alt="" srcset=""> <span>Camo Unlocking</span>
+															<svg class="Arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.12835 9.58706C7.32697 9.80775 7.67303 9.80775 7.87165 9.58706L11.249 5.83448C11.5386 5.51272 11.3102 5 10.8773 5H4.12268C3.6898 5 3.46145 5.51272 3.75103 5.83448L7.12835 9.58706Z" fill="#59617B"></path>
+															</svg>
+														</div>
+													</div>
+													<div class="DropDownMenu">
+														<a href="/games/call-of-duty-warzone/camo-unlocking/assault-rifles">
+															<p class="SubCategoryName"> Assault Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/smgs">
+															<p class="SubCategoryName"> SMGS </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/shotguns">
+															<p class="SubCategoryName"> Shotguns </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/lmgs">
+															<p class="SubCategoryName"> LMGS </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/tactical-rifles">
+															<p class="SubCategoryName"> Tactical Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/marksman-rifles">
+															<p class="SubCategoryName"> Marksman Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/sniper-rifles">
+															<p class="SubCategoryName"> Sniper Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/handguns">
+															<p class="SubCategoryName"> Handguns </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/launchers">
+															<p class="SubCategoryName"> Launchers </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/camo-unlocking/melee">
+															<p class="SubCategoryName"> Melee </p>
+														</a>
+													</div>
+												</li>
+												<li class="Dpop CategoryName" urll="weapon-leveling">
+													<div class="LiContant">
+														<div class="centrContant"> <img class="imgCategory" src="https://runkers.com/images/uploads/de6360ad6be33b95017de4d80deace14.svg" alt="" srcset=""> <span>Weapon Leveling</span>
+															<svg class="Arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.12835 9.58706C7.32697 9.80775 7.67303 9.80775 7.87165 9.58706L11.249 5.83448C11.5386 5.51272 11.3102 5 10.8773 5H4.12268C3.6898 5 3.46145 5.51272 3.75103 5.83448L7.12835 9.58706Z" fill="#59617B"></path>
+															</svg>
+														</div>
+													</div>
+													<div class="DropDownMenu">
+														<a href="/games/call-of-duty-warzone/weapon-leveling/assault-rifles">
+															<p class="SubCategoryName"> Assault Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/smgs">
+															<p class="SubCategoryName"> SMGS </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/shotguns">
+															<p class="SubCategoryName"> Shotguns </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/lmgs">
+															<p class="SubCategoryName"> LMGS </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/tactical-rifles">
+															<p class="SubCategoryName"> Tactical Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/marksman-rifles">
+															<p class="SubCategoryName"> Marksman Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/sniper-rifles">
+															<p class="SubCategoryName"> Sniper Rifles </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/handguns">
+															<p class="SubCategoryName"> Handguns </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/launchers">
+															<p class="SubCategoryName"> Launchers </p>
+														</a>
+														<a href="/games/call-of-duty-warzone/weapon-leveling/melee">
+															<p class="SubCategoryName"> Melee </p>
+														</a>
+													</div>
+												</li>
+												<a href="/games/call-of-duty-warzone/weapon-unlock" class="CategoryName 3" slug="">
+													<li> </li>
+													<li>
+														<div class="LiContant">
+															<div class="centrContant"> <img class="imgCategory" src="https://runkers.com/images/uploads/de6360ad6be33b95017de4d80deace14.svg" alt="" srcset=""> <span>Weapon Unlock</span> </div>
+														</div>
+													</li>
+												</a>
+												<a href="/games/call-of-duty-warzone/power-leveling" class="CategoryName 4" slug="">
+													<li> </li>
+													<li>
+														<div class="LiContant">
+															<div class="centrContant"> <img class="imgCategory" src="https://runkers.com/images/uploads/de6360ad6be33b95017de4d80deace14.svg" alt="" srcset=""> <span>Power Leveling</span> </div>
+														</div>
+													</li>
+												</a>
+												<a href="/games/call-of-duty-warzone/play-with-pros" class="CategoryName 5" slug="">
+													<li> </li>
+													<li>
+														<div class="LiContant">
+															<div class="centrContant"> <img class="imgCategory" src="https://runkers.com/images/uploads/de6360ad6be33b95017de4d80deace14.svg" alt="" srcset=""> <span>Play with PROs</span> </div>
+														</div>
+													</li>
+												</a>
+												<a href="/games/call-of-duty-warzone/coaching" class="CategoryName 6" slug="">
+													<li> </li>
+													<li>
+														<div class="LiContant">
+															<div class="centrContant"> <img class="imgCategory" src="https://runkers.com/images/uploads/de6360ad6be33b95017de4d80deace14.svg" alt="" srcset=""> <span>Coaching</span> </div>
+														</div>
+													</li>
+												</a>
+											</ul>
+										</div> <span class="scrollbar-track"><span class="scrollbar-thumb"></span></span>
+										<button class="support-button"> <img src="https://runkers.com/img/Product/Body/Group.svg" alt=""> <span>CHAT WITH US</span> </button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			.SuccessFail__Contant.c-white.ff-intro.relative
+					block content
+		</section>
+		<footer>
+			<div class="Container">
+				<div class="Payment"> <img src="https://runkers.com/img/footer/29.svg" alt=""> <img src="https://runkers.com/img/footer/27.svg" alt=""> <img src="https://runkers.com/img/footer/26.svg" alt=""> <img src="https://runkers.com/img/footer/30.svg" alt=""> </div>
+			</div>
+			<div class="hr"> </div>
+			<div class="Container">
+				<div class="Footer__contant">
+					<nav>
+						<ul>
+							<li class="Footer__Logo"> <img src="https://runkers.com/img/header/Logo_test.svg" alt="" srcset=""> </li>
+							<li>
+								<p>© Runkers 2022. All rights reserved.</p>
+							</li>
+							<li class="Footer__buttons">
+								<button>
+									<a href="https://www.instagram.com/runkers_com/">
+										<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 12.5C2.5 8.30863 2.5 6.21294 3.55041 4.76718C3.88964 4.30026 4.30026 3.88964 4.76718 3.55041C6.21294 2.5 8.30863 2.5 12.5 2.5C16.6914 2.5 18.7871 2.5 20.2328 3.55041C20.6997 3.88964 21.1104 4.30026 21.4496 4.76718C22.5 6.21294 22.5 8.30863 22.5 12.5C22.5 16.6914 22.5 18.7871 21.4496 20.2328C21.1104 20.6997 20.6997 21.1104 20.2328 21.4496C18.7871 22.5 16.6914 22.5 12.5 22.5C8.30863 22.5 6.21294 22.5 4.76718 21.4496C4.30026 21.1104 3.88964 20.6997 3.55041 20.2328C2.5 18.7871 2.5 16.6914 2.5 12.5ZM12.5 7.20588C9.57632 7.20588 7.20588 9.57632 7.20588 12.5C7.20588 15.4237 9.57632 17.7941 12.5 17.7941C15.4237 17.7941 17.7941 15.4237 17.7941 12.5C17.7941 9.57632 15.4237 7.20588 12.5 7.20588ZM12.5 15.8088C10.6762 15.8088 9.19118 14.3238 9.19118 12.5C9.19118 10.6749 10.6762 9.19118 12.5 9.19118C14.3238 9.19118 15.8088 10.6749 15.8088 12.5C15.8088 14.3238 14.3238 15.8088 12.5 15.8088ZM18.8966 6.80883C18.8966 7.19844 18.5808 7.51427 18.1912 7.51427C17.8016 7.51427 17.4857 7.19844 17.4857 6.80883C17.4857 6.41923 17.8016 6.10339 18.1912 6.10339C18.5808 6.10339 18.8966 6.41923 18.8966 6.80883Z" fill="#59617B"></path>
+										</svg>
+									</a>
+								</button>
+								<button>
+									<a href="https://www.facebook.com/RUNKERSCOM">
+										<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_207_3414)">
+												<path d="M15.4995 0.504161L12.906 0.5C9.99222 0.5 8.10923 2.4319 8.10923 5.42203V7.69141H5.50156C5.27622 7.69141 5.09375 7.87409 5.09375 8.09943V11.3875C5.09375 11.6128 5.27643 11.7953 5.50156 11.7953H8.10923V20.0922C8.10923 20.3175 8.2917 20.5 8.51704 20.5H11.9193C12.1446 20.5 12.3271 20.3173 12.3271 20.0922V11.7953H15.3761C15.6014 11.7953 15.7839 11.6128 15.7839 11.3875L15.7852 8.09943C15.7852 7.99123 15.7421 7.88762 15.6657 7.81105C15.5894 7.73448 15.4853 7.69141 15.3771 7.69141H12.3271V5.76763C12.3271 4.84298 12.5475 4.37358 13.7519 4.37358L15.4991 4.37295C15.7242 4.37295 15.9067 4.19027 15.9067 3.96514V0.911972C15.9067 0.687052 15.7244 0.504577 15.4995 0.504161Z" fill="#59617B"></path>
+											</g>
+											<defs>
+												<clipPath id="clip0_207_3414">
+													<rect width="20" height="20" fill="white" transform="translate(0.5 0.5)"></rect>
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</button>
+							</li>
+						</ul>
+						<ul>
+							<li class="First"> <span>Company</span> </li>
+							<a href="https://runkers.com/info/about-us">
+								<li> <span> About us</span> </li>
+							</a>
+							<a href="https://runkers.com/info/guarantees">
+								<li> <span>Guarantees</span> </li>
+							</a>
+							<a href="https://runkers.com/info/legal/contacts">
+								<li> <span>Contact us</span> </li>
+							</a>
+						</ul>
+						<ul>
+							<li class="First"> <span>Call of Duty: Warzone</span> </li>
+							<a href="/games/call-of-duty-warzone/kills-boost">
+								<li> <span>Kills Boost</span> </li>
+							</a>
+							<a href="/games/call-of-duty-warzone/wins-boost">
+								<li> <span> Wins Boost</span> </li>
+							</a>
+							<a href="/games/call-of-duty-warzone/camo-unlocking">
+								<li> <span>Camo Unlocking</span> </li>
+							</a>
+							<a href="/games/call-of-duty-warzone/weapon-leveling">
+								<li> <span>Weapon Leveling</span> </li>
+							</a>
+						</ul>
+						<ul>
+							<li class="First"> <span>Apex Legends</span> </li>
+							<a href="/games/apex-legends/rank-boosts">
+								<li> <span>Rank Boost</span> </li>
+							</a>
+							<a href="/games/apex-legends/kills-boost">
+								<li> <span>Kills Farm</span> </li>
+							</a>
+							<a href="/games/apex-legends/legends-unlocking">
+								<li> <span>Legends Unlocking</span> </li>
+							</a>
+							<a href="/games/apex-legends/apex-badges">
+								<li> <span>Badges</span> </li>
+							</a>
+						</ul>
+						<ul>
+							<li class="First"> <span>Legal</span> </li>
+							<a href="/info/legal/user-agreement">
+								<li> <span>Terms and Conditions</span> </li>
+							</a>
+							<a href="/info/legal/privacy-policy">
+								<li> <span>Privacy policy</span> </li>
+							</a>
+							<a href="/info/legal/refund-policy">
+								<li> <span>Refund policy</span> </li>
+							</a>
+							<a href="/info/legal/cookie-policy">
+								<li> <span>Cookies policy</span> </li>
+							</a>
+						</ul>
+					</nav>
+					<p class="HidenForAdapt footerP"> © Runkers 2022. All rights reserved. </p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://runkers.com/scripts/slick/slick.min.js"></script>
+		<script src="https://runkers.com/scripts/script.js?v1"></script>
