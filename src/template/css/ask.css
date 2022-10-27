@@ -62,3 +62,9 @@
     width: 620px;
   }
 }
+@media screen and (max-width: 420px) {
+  .ask__wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
