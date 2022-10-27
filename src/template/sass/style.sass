@@ -7,6 +7,9 @@
 .relative
 	position: relative
 
+.SuccessFail__Contant
+	overflow-x: hidden
+
 .btn
 	z-index: 1
 	position: relative
@@ -62,5 +65,25 @@
 		height: 100%
 		max-width: 100%
 		max-height: 100%
+
+.bg-wrap
+	position: relative
+	&::before
+		z-index: -1
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		height: 600px
+		background: linear-gradient(180deg, #080b16 0%, rgba(10, 16, 22, 0) 34.3%)
+.bg
+	z-index: -2
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
 
 @import typography
